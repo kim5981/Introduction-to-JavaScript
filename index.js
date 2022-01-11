@@ -20,6 +20,12 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 21;
+
+if (votingAge >= 18) {
+  console.log("true");
+}
+
 
 
 /*
@@ -33,6 +39,14 @@ Do the following:
    HINT: no function required
 */
 
+let variable1 = 3; 
+let variable2 = 2;
+
+if (variable2 < variable1)  {
+   (variable1 = 1);
+}
+
+console.log(variable1);
 
 
 
@@ -48,6 +62,10 @@ Do the following:
    HINT: look up the Number method
 */
 
+let string = "1999";
+string = 1999;
+
+console.log(string);
 
 
 
@@ -59,6 +77,8 @@ Do the following:
    2. Receive the parameters: a and b
    3. Multiply a and b and return the answer
 */
+
+multiply(1,2);
 
 function multiply(a,b){
   return a * b;
@@ -140,6 +160,9 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+
+//establish variables value here and win/lose conditions
+
 
 function game(user, computer){
   /*add your code here*/
