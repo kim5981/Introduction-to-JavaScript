@@ -187,7 +187,7 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 //establish variables value here and win/lose conditions
 
 
-let computer = Math.floor(Math.random() * 4);
+let computer = Math.floor(Math.random() * 3);
 
 if (computer = 1) {
   return computer = "rock";
@@ -195,9 +195,8 @@ if (computer = 1) {
   return computer = "paper";
 } else if (computer = 3) {
   return computer = "scissors";
-} else {
-  return "undefined";
-}
+} 
+
 
 function game(user, computer){
  if (user === computer) {
@@ -214,7 +213,7 @@ function game(user, computer){
 
 }
 
-console.log(game("paper",computer));
+console.log(game("rock",computer));
 
 
 
@@ -229,11 +228,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km){
+  return km * .621371;
 }
 
-
+console.log(miles(2));
 
 //Task 5b - Feet to CM
 /*
@@ -243,9 +242,11 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+ return cm * 0.0328084;
 }
+
+console.log(feet(6));
 
 
 
