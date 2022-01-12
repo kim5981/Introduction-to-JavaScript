@@ -190,11 +190,11 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 let computer = Math.floor(Math.random() * 3);
 
 if (computer = 1) {
-  return computer = "rock";
+   computer = "rock";
 } else if (computer = 2) {
-  return computer = "paper";
+   computer = "paper";
 } else if (computer = 3) {
-  return computer = "scissors";
+  computer = "scissors";
 } 
 
 
@@ -260,10 +260,13 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+      for (let i = number; i >0; i--){
+        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`
+      }
 }
 
+console.log(annoyingSong(99));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
