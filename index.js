@@ -213,7 +213,7 @@ function game(user, computer){
 
 }
 
-console.log(game("rock",computer));
+console.log(game("paper",computer));
 
 
 
@@ -284,15 +284,15 @@ Using the grade function below do the following:
 */
 
 function grade(score){
-if (score <= 68) {
+if (score < 69) {
   return `you got an F`;
-} else if (score >= 69 && score <= 60) {
+} else if (score >= 60 && score <= 69) {
   return `you got a D`;
-} else if (score >= 70 && score < 79) {
+} else if (score >= 70 && score <= 79) {
   return `you got a C`;
-} else if (score >= 80 && score < 90) {
+} else if (score >= 80 && score <= 89) {
   return `you got a B`;
-} else if (score >= 90 && score < 100) {
+} else if (score >= 90 && score <= 100) {
   return `you got an A`;
 } else {
   return `did you take the test?`
@@ -300,7 +300,7 @@ if (score <= 68) {
 
 }
 
-console.log(grade(1000));
+console.log(grade(65));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -314,10 +314,11 @@ HINT - you may need to study tomorrow's content on arrays
 HINT - try looking up the .includes() method
 */
 
-
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+/*
+function vowelCounter(word) {
+  word.includes("a","E","i","I","o","O","u","U")
 }
+*/
 
 
 
