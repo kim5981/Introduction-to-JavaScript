@@ -187,13 +187,13 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 //establish variables value here and win/lose conditions
 
 
-let computer = Math.floor(Math.random() * 3);
+let computer = Math.floor(Math.random() * 4);
 
-if (computer = 1) {
+if (computer === 1) {
    computer = "rock";
-} else if (computer = 2) {
+} else if (computer === 2) {
    computer = "paper";
-} else if (computer = 3) {
+} else if (computer === 3) {
   computer = "scissors";
 } 
 
@@ -224,7 +224,7 @@ console.log(game("paper",computer));
 /*
 Using the miles function below do the following:
 1. Receive a number of kilometers
-2. Convert the number of kiolmeters received to miles
+2. Convert the number of kilometers received to miles
 3. Return the number of miles
 */
 
@@ -243,7 +243,7 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
- return cm * 0.0328084;
+ return cm / 0.0328084;
 }
 
 console.log(feet(6));
@@ -284,10 +284,8 @@ Using the grade function below do the following:
 */
 
 function grade(score){
-if (score < 69) {
-  return `you got an F`;
-} else if (score >= 60 && score <= 69) {
-  return `you got a D`;
+if (score >= 60 && score <= 69) {
+  return `you got a D`; 
 } else if (score >= 70 && score <= 79) {
   return `you got a C`;
 } else if (score >= 80 && score <= 89) {
@@ -295,10 +293,12 @@ if (score < 69) {
 } else if (score >= 90 && score <= 100) {
   return `you got an A`;
 } else {
-  return `did you take the test?`
+  return `you got an F`
 }
 
 }
+
+
 
 console.log(grade(65));
 
