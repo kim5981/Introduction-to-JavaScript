@@ -23,7 +23,7 @@ Do the following:
 let votingAge = 21;
 
 if (votingAge >= 18) {
-  console.log("true");
+  console.log("--TASK 1A--" ,"true");
 }
 
 
@@ -46,7 +46,7 @@ if (variable2 < variable1)  {
    (variable1 = 1);
 }
 
-console.log(variable1);
+console.log("--TASK 1B--",variable1);
 
 
 
@@ -64,7 +64,7 @@ Do the following:
 
 let string = "1999";
 
-console.log(Number(string));
+console.log("--TASK 1C--", Number(string));
 
 
 
@@ -105,7 +105,7 @@ function dogYears(humanYears) {
 }
 
 
-console.log(dogYears(26));
+console.log("--TASK 2--",dogYears(26));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -157,6 +157,7 @@ function hungryDog(weight, age){
     
 }
 
+console.log("--TASK 3--", hungryDog(15, 1));
 
 
 
@@ -189,6 +190,7 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 
 let computer = Math.floor(Math.random() * 4);
 
+
 if (computer === 1) {
    computer = "rock";
 } else if (computer === 2) {
@@ -213,7 +215,7 @@ function game(user, computer){
 
 }
 
-console.log(game("paper",computer));
+console.log("--TASK 4--" ,game("paper",computer));
 
 
 
@@ -232,7 +234,7 @@ function miles(km){
   return km * .621371;
 }
 
-console.log(miles(2));
+console.log("--TASK 5A--",miles(2));
 
 //Task 5b - Feet to CM
 /*
@@ -243,10 +245,10 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
- return cm / 0.0328084;
+ return cm / 30.48;
 }
 
-console.log(feet(6));
+console.log("--TASK 5B--", feet(160));
 
 
 
@@ -262,11 +264,11 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(number){
       for (let i = number; i >0; i--){
-        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`
+        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`;
       }
 }
 
-console.log(annoyingSong(99));
+console.log("--TASK 6--",annoyingSong(99));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -284,23 +286,23 @@ Using the grade function below do the following:
 */
 
 function grade(score){
-if (score >= 60 && score <= 69) {
-  return `you got a D`; 
-} else if (score >= 70 && score <= 79) {
-  return `you got a C`;
+if (score >= 90) {
+  return `you got an A`; 
 } else if (score >= 80 && score <= 89) {
   return `you got a B`;
-} else if (score >= 90 && score <= 100) {
-  return `you got an A`;
-} else {
-  return `you got an F`
+} else if (score >= 70 && score <= 79) {
+  return `you got a C`;
+} else if (score >= 60  && score <= 69) {
+  return `you got a D`;
+} else if (score < 60) {
+  return `you got an F`;
 }
 
 }
 
+console.log("--TASK 7--", grade(65));
 
 
-console.log(grade(65));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
